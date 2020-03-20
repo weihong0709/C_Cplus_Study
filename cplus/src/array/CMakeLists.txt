@@ -5,4 +5,4 @@ aux_source_directory(. DIR_LIB_SRCS)
 # 指定生成 arrayFunctions 链接库
 add_library (arrayFunctions ${DIR_LIB_SRCS})
 install (TARGETS arrayFunctions DESTINATION lib)
-install (FILES array.h DESTINATION include)
+install (FILES array_test.h DESTINATION include)
