@@ -44,5 +44,4 @@ void test_cplus_array(){
       cout<<"myarray:"<<*it<<endl;
   }
   
-  
 }
