@@ -13,20 +13,21 @@ set(CMAKE_BUILD_TYPE "Debug")
 
 # 项目信息
 project (demo)
-
+#编译选项
+add_compile_options(-std=c++11)
 # 查找当前目录下的所有源文件
 # 并将名称保存到 DIR_SRCS 变量
 aux_source_directory(./ DIR_SRCS)
 #指定include包含文件查找路径
-include_directories("./array/" "./string/")
+include_directories("./array/" "./string/" "./enum/")
 # 添加子目录,子目录下必须有CMakeLists.txt文件
 add_subdirectory(array)
 add_subdirectory(string)
-#add_subdirectory(convert)
+add_subdirectory(enum)
 
 # 指定生成目标 
 add_executable(demo ${DIR_SRCS})
 # 添加链接库
-target_link_libraries(demo arrayFunctions stringFunctions)
+target_link_libraries(demo arrayFunctions stringFunctions enumFunctions)
 install (TARGETS demo DESTINATION bin)
 

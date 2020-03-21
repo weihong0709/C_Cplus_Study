@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zte/github/C_Cplus_Study/cplus/src/enum/enum_test.cc
+iostream
+-
+enum_test.h
+/Users/zte/github/C_Cplus_Study/cplus/src/enum/enum_test.h
+
+/Users/zte/github/C_Cplus_Study/cplus/src/enum/enum_test.h
+

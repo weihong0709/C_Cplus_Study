@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libstringFunctions.a  CMakeFiles/stringFunctions.dir/string_test.cc.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libstringFunctions.a
