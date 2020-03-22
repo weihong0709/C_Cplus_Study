@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libarrayFunctions.a  CMakeFiles/arrayFunctions.dir/array.cc.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libarrayFunctions.a
