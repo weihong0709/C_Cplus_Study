@@ -1,5 +1,8 @@
 #include <iostream>
+#include <memory>
+#include <thread>
 #include <stdio.h>
+#include "student.h"
 using namespace std;
 
 class Demo2{
@@ -48,4 +51,14 @@ void modifyDemo(Demo & demo){
  */
 void Demo::testThis(){
     std::cout<<"test this:"<<this->a<<endl;
+}
+
+/**
+ *this 指向方法对应的对象的指针
+ */
+void testUniquePointer(){
+    //static thread_local unique_ptr<student> stu(new student());
+    static thread_local shared_ptr<student> stu_1(new student());
+    stu_1.reset(new student());
+    
 }
