@@ -3,9 +3,13 @@
 #include "string_test.h"
 
 using namespace std;
+void testCFormatString();
+void testCFormatStringCompare();
 void testString(){
      testInitialize();
      testSzie();
+     testCFormatString();
+     testCFormatStringCompare();
 }
 void testInitialize(){
     // 默认初始化为空
@@ -24,4 +28,20 @@ void testSzie(){
     //size是一个无符号整型，平台无关
     string::size_type a = temp.size();
     cout<<"size_type:"<<a<<endl;
+}
+void testCFormatString(){
+    char str[20] = "1233554";
+    cout<<"str:"<<str<<endl;
+    cout<<"str length:"<<strlen(str)<<endl;
+    strncpy(str,"11444777ddd",20);
+    cout<<"str:"<<str<<endl;
+    cout<<"str length:"<<strlen(str)<<endl;
+
+}
+void testCFormatStringCompare(){
+    char str[20] = "72335542";
+    char str2[20] = "12335544";
+    cout<<"str compare:"<<strcmp(str,str2)<<endl;
+    
+
 }
