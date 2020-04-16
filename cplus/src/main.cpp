@@ -6,6 +6,7 @@
 #include "function_test.h"
 #include "unique_ptr_test.h"
 #include "polymorphism_test.h"
+#include "friend_test.h"
 
 using namespace std;
 int main(void){
@@ -17,4 +18,10 @@ int main(void){
   //test_unique_ptr();
   //testPolymorphismWithPointer();
   testPolymorphismWithObject();
+  //testString();
+  //testEnum();
+  //testFunctions(); 
+  testUniquePointer();
+  testUniquePointer();
+  testUniquePointer();
 }
