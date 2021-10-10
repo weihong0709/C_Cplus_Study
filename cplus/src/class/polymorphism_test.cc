@@ -9,6 +9,9 @@ public:
     virtual void someVirtualFunction(){
         cout<<"CBase virtual method invoke"<<endl;
     }
+    virtual void someVirtualFunction2(){
+        cout<<"CBase virtual method2 invoke"<<endl;
+    }
     void someFunction(){
         cout<<"CBase method invoke"<<endl;
     }

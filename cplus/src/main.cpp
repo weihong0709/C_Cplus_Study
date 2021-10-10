@@ -19,13 +19,13 @@ int main(void){
   //testFunctions();
   //test_unique_ptr();
   //test_unique_ptr();
-  //testPolymorphismWithPointer();
-  // testPolymorphismWithObject();
+  testPolymorphismWithPointer();
+  testPolymorphismWithObject();
   //testString();
   //testEnum();
   //testFunctions(); 
   //testTime();
   // testSort();
-  testStruct();
+  // testStruct();
 
 }

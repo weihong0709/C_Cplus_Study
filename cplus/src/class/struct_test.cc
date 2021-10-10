@@ -15,7 +15,7 @@ void testStruct(){
     temp.x= 1;
     temp.y=2;
     struct rect temp2;
-    
+    //
     cout<<temp2.pt1->x<<endl;
     temp2.pt1[0] = temp;
     rectone1.pt1[0] =temp;

@@ -13,14 +13,17 @@ void printArray(int [],int);
 void printArray(int a[],int size);
 int sumWithPoint(int *,int *);
 void pointOperation(void);
-
+void testPrintf();
+void testScanf();
 int main(int argc, const char * argv[]) {
-    testArray();
+    // testArray();
     //testConst();
     //testPoint();
     //pointOperation();
     //testZeroAddress();
     //testVoidPointer();
+    testPrintf();
+    testScanf();
     return 0;
 }
 void testArray(){
@@ -165,3 +168,29 @@ void testVoidPointer(){
 void testMaloc(){
     
 }
+
+void testPrintf(){
+    printf(":%s:\n","hello world");
+    printf(":%10s:\n","hello world");
+    printf(":%15s:\n","hello world");
+    printf(":%-15s:\n","hello world");
+    printf(":%-15.10s:\n","hello world");
+    printf(":%s:\n","hello world");
+    float temp = 0.001;
+    printf(":%f:\n",temp);
+    printf(":%4f:\n",temp);
+    printf(":%4.3f:\n",temp);
+    printf(":%-8.3f:\n",temp);
+    printf(":%8.3f:\n",temp);
+    
+}
+void testScanf(){
+    int one,two;
+    // int count = scanf("/%d",&one);
+    // printf("count:%d,number:%d\n",count,one);
+    int count = scanf("%d %d ",&one,&two);
+    printf("count:%d,one:%d,two:%d\n",count,one,two);
+}
+
+
+
