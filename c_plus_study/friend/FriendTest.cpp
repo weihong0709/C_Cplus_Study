@@ -2,9 +2,6 @@
 //  FriendTest.hpp
 //  cplustest
 //
-//  Created by  刘为红 on 2019/9/1.
-//  Copyright © 2019年  刘为红. All rights reserved.
-//
 
 #ifndef FriendTest_hpp
 #define FriendTest_hpp

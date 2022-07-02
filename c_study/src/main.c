@@ -14,14 +14,17 @@ void printArray(int [],int);
 void printArray(int a[],int size);
 int sumWithPoint(int *,int *);
 void pointOperation(void);
-
+void testPrintf();
+void testScanf();
 int main(int argc, const char * argv[]) {
-    testArray();
+    // testArray();
     //testConst();
     //testPoint();
     //pointOperation();
     //testZeroAddress();
     //testVoidPointer();
+    testPrintf();
+    testScanf();
     return 0;
 }
 void testArray(){
@@ -166,9 +169,38 @@ void testVoidPointer(){
 void testMaloc(){
     
 }
+<<<<<<< HEAD
 void testGernice(void *x,void *y,size_t size){
     char tmp[size];
      memcpy(tmp, y, size);
      memcpy(y, x, size);
      memcpy(x, tmp, size);
 }
+=======
+
+void testPrintf(){
+    printf(":%s:\n","hello world");
+    printf(":%10s:\n","hello world");
+    printf(":%15s:\n","hello world");
+    printf(":%-15s:\n","hello world");
+    printf(":%-15.10s:\n","hello world");
+    printf(":%s:\n","hello world");
+    float temp = 0.001;
+    printf(":%f:\n",temp);
+    printf(":%4f:\n",temp);
+    printf(":%4.3f:\n",temp);
+    printf(":%-8.3f:\n",temp);
+    printf(":%8.3f:\n",temp);
+    
+}
+void testScanf(){
+    int one,two;
+    // int count = scanf("/%d",&one);
+    // printf("count:%d,number:%d\n",count,one);
+    int count = scanf("%d %d ",&one,&two);
+    printf("count:%d,one:%d,two:%d\n",count,one,two);
+}
+
+
+
+>>>>>>> 2d53bbbf7fdc056ef4643b60760fc61941f9489f
