@@ -5,7 +5,9 @@
 using namespace std;
 void testCFormatString();
 void testCFormatStringCompare();
+void testStrAdd();
 void testString(){
+     testStrAdd();
      testInitialize();
      testSzie();
      testCFormatString();
@@ -45,3 +47,15 @@ void testCFormatStringCompare(){
     
 
 }
+void testSnprintf(char * str,char * str2,size_t maxlength){
+    snprintf(str,maxlength,"aa%s",str2);
+}
+void testStrAdd(){
+    char str[20] ={0};
+    char str2[10] = "12335544";
+    
+    testSnprintf(str,str2,20);
+    cout<<"str:"<<str<<endl;
+
+}
+

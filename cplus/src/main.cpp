@@ -9,21 +9,23 @@
 #include "friend_test.h"
 #include "time_test.h"
 #include "sort_test.h"
+#include "class_basic.h"
 
 using namespace std;
 int main(void){
   //testArray();
-  testString();
+  // testString();
   //testEnum();
   //testFunctions();
   //test_unique_ptr();
   //test_unique_ptr();
   //testPolymorphismWithPointer();
-  testPolymorphismWithObject();
+  // testPolymorphismWithObject();
   //testString();
   //testEnum();
   //testFunctions(); 
   //testTime();
-  testSort();
+  // testSort();
+  testClassDefaultInit();
 
 }

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <memory.h>
 #define SIZE 6
 void testArray(void);
 void testConst(void);
@@ -164,4 +165,10 @@ void testVoidPointer(){
 }
 void testMaloc(){
     
+}
+void testGernice(void *x,void *y,size_t size){
+    char tmp[size];
+     memcpy(tmp, y, size);
+     memcpy(y, x, size);
+     memcpy(x, tmp, size);
 }
